@@ -46,6 +46,39 @@ It integrates:
   - Low Demand  
 
 ---
+## 📸 Project Screenshots
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/bhautik2005/retailpulse/e0f58bbb83aee85c3d5fce3f38a911673e378775/Screenshot%202026-04-22%20182623.png" width="350"/><br>
+      <b>Sales Dashboard</b>
+    </td>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/bhautik2005/retailpulse/e0f58bbb83aee85c3d5fce3f38a911673e378775/Screenshot%202026-04-22%20182650.png" width="350"/><br>
+      <b>Customer Dashboard</b>
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/bhautik2005/retailpulse/e0f58bbb83aee85c3d5fce3f38a911673e378775/Screenshot%202026-04-22%20182720.png" width="350"/><br>
+      <b>Churn Prediction</b>
+    </td>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/bhautik2005/retailpulse/e0f58bbb83aee85c3d5fce3f38a911673e378775/Screenshot%202026-04-22%20182741.png" width="350"/><br>
+      <b>Forecast Dashboard</b>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2" align="center">
+      <img src="https://raw.githubusercontent.com/bhautik2005/retailpulse/e0f58bbb83aee85c3d5fce3f38a911673e378775/Screenshot%202026-04-22%20182800.png" width="400"/><br>
+      <b>Inventory Dashboard</b>
+    </td>
+  </tr>
+</table>
+---
 ## 📦 Project Structure
 
 ```
