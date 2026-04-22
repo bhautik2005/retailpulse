@@ -195,5 +195,5 @@ streamlit run app/app.py
 - Improve UI/UX
     
 ---
-##👨‍💻 Author
+##  👨‍💻 Author
 ### Bhautik Gondaliya
