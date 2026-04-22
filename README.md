@@ -46,8 +46,10 @@ It integrates:
   - Low Demand  
 
 ---
-```
 ## 📦 Project Structure
+
+```
+
 RetailPulse/
 │
 ├── data/
@@ -95,45 +97,61 @@ Raw Data → Data Cleaning → Feature Engineering
 
 ## 🚀 How to Run the Project
 
-### 1️⃣ Install Dependencies
-
-```bash
+1️⃣ Install Dependencies
+```
 pip install -r requirements.txt
+```
 2️⃣ Run Data Pipeline
+```
 python -m src.pipeline
+```
 3️⃣ Run ML Models
+```
 python -m src.ml.run_all_models
+```
 4️⃣ Run Dashboard
+```
 streamlit run app/app.py
 ```
+--- 
+
 ## 📊 Dashboard Pages
  - 📊 Sales Dashboard (KPIs + trends)
  - 👥 Customer Dashboard (churn + segmentation)
  - 🤖 Churn Prediction (interactive)
  - 📈 Forecast Dashboard
  - 📦 Inventory Dashboard
-   
+
+---
+
 ## 🧠 Business Insights
- -> Late deliveries reduce customer satisfaction
- -> High-value customers drive most revenue
- -> Certain product categories dominate sales
- -> Churn prediction enables targeted retention
- -> Inventory can be optimized using demand segmentation
- 
+
+- Late deliveries reduce customer satisfaction  
+- High-value customers drive most revenue  
+- Certain product categories dominate sales  
+- Churn prediction enables targeted retention  
+- Inventory can be optimized using demand segmentation  
+
+---
+
 ## 🛠️ Tech Stack
-Python
-Pandas, NumPy
-Scikit-learn
-Statsmodels
-Streamlit
-Matplotlib, Seaborn
- 
+
+- Python  
+- Pandas, NumPy  
+- Scikit-learn  
+- Statsmodels  
+- Streamlit  
+- Matplotlib, Seaborn  
+
+---
+
 ## 🎯 Future Improvements
-Add real-time data pipeline
-Deploy backend using FastAPI
-Add model explainability (SHAP)
-Integrate cloud storage
-Improve UI/UX
+
+- Add real-time data pipeline  
+- Deploy backend using FastAPI  
+- Add model explainability (SHAP)  
+- Integrate cloud storage  
+- Improve UI/UX  
 
 ### 👨‍💻 Author
 ## Bhautik Gondaliya
