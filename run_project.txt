@@ -1,0 +1,3 @@
+run the pipline -> python -m src.pipeline
+run the ml model -> python -m src.ml.run_all_models
+run the app -> streamlit run app/app.py

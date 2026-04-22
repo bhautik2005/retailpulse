@@ -1,0 +1,46 @@
+2026-04-21 17:33:36,694 - ERROR - \u274c ML Pipeline failed: 'ml_output_path'
+Traceback (most recent call last):
+  File "C:\Users\NKIT\Desktop\ReatailPush2\RetailPulse_Data\src\ml\run_all_models.py", line 22, in run_ml_pipeline
+    ml_path = config["data"]["ml_output_path"]
+              ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+KeyError: 'ml_output_path'
+2026-04-21 17:34:30,516 - INFO - \U0001f680 ML Pipeline Started
+2026-04-21 17:34:30,517 - INFO - \U0001f680 Running Churn Model
+2026-04-21 17:34:32,996 - INFO - \U0001f4ca Churn Model Accuracy: 1.0000
+2026-04-21 17:34:33,998 - INFO - \u2705 Churn model completed
+2026-04-21 17:34:34,010 - INFO - \U0001f680 Running Forecast Model
+2026-04-21 17:34:34,420 - INFO - \u2705 Forecast model completed
+2026-04-21 17:34:34,422 - INFO - \U0001f680 Running Inventory Model
+2026-04-21 17:34:34,662 - INFO - \u2705 Inventory model completed
+2026-04-21 17:34:34,663 - INFO - \u2705 All models completed
+2026-04-21 17:38:35,731 - INFO - \U0001f680 ML Pipeline Started
+2026-04-21 17:38:35,731 - INFO - \U0001f680 Running Churn Model
+2026-04-21 17:38:41,092 - INFO - \U0001f4ca Churn Model Accuracy: 1.0000
+2026-04-21 17:38:43,072 - INFO - \u2705 Churn model completed
+2026-04-21 17:38:43,088 - INFO - \U0001f680 Running Forecast Model
+2026-04-21 17:38:43,614 - INFO - \u2705 Forecast model completed
+2026-04-21 17:38:43,616 - INFO - \U0001f680 Running Inventory Model
+2026-04-21 17:38:44,111 - INFO - \u2705 Inventory model completed
+2026-04-21 17:38:44,112 - INFO - \u2705 All models completed
+2026-04-21 17:43:54,775 - INFO - \U0001f680 ML Pipeline Started
+2026-04-21 17:43:54,775 - INFO - \U0001f680 Running Churn Model
+2026-04-21 17:44:14,988 - INFO - \U0001f4ca Churn Model Accuracy: 0.7898
+2026-04-21 17:44:18,098 - INFO - \u2705 Churn model completed
+2026-04-21 17:44:18,122 - INFO - \U0001f680 Running Forecast Model
+2026-04-21 17:44:18,265 - INFO - \U0001f4ca Forecast Model Training MAE: 8328.34
+2026-04-21 17:44:18,265 - INFO - \U0001f4ca Forecast Model AIC: 13534.14
+2026-04-21 17:44:18,309 - INFO - \u2705 Forecast model completed
+2026-04-21 17:44:18,310 - INFO - \U0001f680 Running Inventory Model
+2026-04-21 17:44:18,483 - INFO - \u2705 Inventory model completed
+2026-04-21 17:44:18,485 - INFO - \u2705 All models completed
+2026-04-21 18:28:29,377 - INFO - \U0001f680 ML Pipeline Started
+2026-04-21 18:28:29,380 - INFO - \U0001f680 Running Churn Model
+2026-04-21 18:28:35,531 - INFO - \U0001f4ca Churn Model Accuracy: 1.0000
+2026-04-21 18:28:37,230 - INFO - \u2705 Churn model completed
+2026-04-21 18:28:37,245 - INFO - \U0001f680 Running Forecast Model
+2026-04-21 18:28:37,732 - INFO - \U0001f4ca Forecast Model Training MAE: 8328.34
+2026-04-21 18:28:37,732 - INFO - \U0001f4ca Forecast Model AIC: 13534.14
+2026-04-21 18:28:37,865 - INFO - \u2705 Forecast model completed
+2026-04-21 18:28:37,868 - INFO - \U0001f680 Running Inventory Model
+2026-04-21 18:28:38,469 - INFO - \u2705 Inventory model completed
+2026-04-21 18:28:38,471 - INFO - \u2705 All models completed

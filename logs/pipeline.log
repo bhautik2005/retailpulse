@@ -1,0 +1,31 @@
+2026-04-21 17:03:57,613 - INFO - \u2705 Config loaded
+2026-04-21 17:03:57,614 - INFO - \U0001f680 Pipeline started
+2026-04-21 17:04:00,351 - INFO - \u2705 Data loaded: ['orders', 'order_items', 'products', 'customers', 'payments', 'reviews', 'sellers', 'category', 'geolocation']
+2026-04-21 17:04:00,361 - ERROR - \u274c Pipeline failed: string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "C:\Users\NKIT\Desktop\ReatailPush2\RetailPulse_Data\src\pipeline.py", line 37, in run_pipeline
+    df = merge_data(data, config)
+  File "C:\Users\NKIT\Desktop\ReatailPush2\RetailPulse_Data\src\merge.py", line 11, in merge_data
+    left_name = step["left"]
+                ~~~~^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2026-04-21 17:05:08,002 - INFO - \u2705 Config loaded
+2026-04-21 17:05:08,002 - INFO - \U0001f680 Pipeline started
+2026-04-21 17:05:10,378 - INFO - \u2705 Data loaded: ['orders', 'order_items', 'products', 'customers', 'payments', 'reviews', 'sellers', 'category', 'geolocation']
+2026-04-21 17:05:10,387 - ERROR - \u274c Pipeline failed: 'on'
+Traceback (most recent call last):
+  File "C:\Users\NKIT\Desktop\ReatailPush2\RetailPulse_Data\src\pipeline.py", line 37, in run_pipeline
+    df = merge_data(data, config)
+  File "C:\Users\NKIT\Desktop\ReatailPush2\RetailPulse_Data\src\merge.py", line 14, in merge_data
+    on_col = step["on"]
+             ~~~~^^^^^^
+KeyError: 'on'
+2026-04-21 17:06:32,683 - INFO - \u2705 Config loaded
+2026-04-21 17:06:32,683 - INFO - \U0001f680 Pipeline started
+2026-04-21 17:06:35,458 - INFO - \u2705 Data loaded: ['orders', 'order_items', 'products', 'customers', 'payments', 'reviews', 'sellers', 'category', 'geolocation']
+2026-04-21 17:06:37,556 - INFO - \u2705 Data merged: shape=(119143, 40)
+2026-04-21 17:06:39,116 - INFO - \u2705 Data cleaned: shape=(118310, 40)
+2026-04-21 17:06:39,116 - INFO - \u2705 Data validated
+2026-04-21 17:06:39,244 - INFO - \u2705 Features created
+2026-04-21 17:06:39,655 - INFO - \u2705 Derived datasets built
+2026-04-21 17:06:46,784 - INFO - \u2705 All files saved successfully
