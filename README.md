@@ -7,43 +7,7 @@ It integrates:
 - 🤖 Machine Learning Models
 - 📈 Interactive Dashboard (Streamlit)
 
----
 
-## 🎯 Project Objectives
-
-- Analyze sales, customer behavior, and product performance  
-- Predict customer churn  
-- Forecast future sales demand  
-- Optimize inventory decisions  
-- Build an end-to-end real-world data product  
-
----
-
-## 🧠 Key Features
-
-### 📊 Data Analytics
-- Sales trend analysis  
-- Customer segmentation (RFM)  
-- Delivery performance insights  
-- Product performance analysis  
-
----
-
-### 🤖 Machine Learning Models
-
-#### 1️⃣ Churn Prediction
-- Predicts customers likely to churn  
-- Model: Random Forest  
-
-#### 2️⃣ Demand Forecasting
-- Predicts future sales (next 30 days)  
-- Model: ARIMA  
-
-#### 3️⃣ Inventory Optimization
-- Categorizes products:
-  - High Demand  
-  - Medium Demand  
-  - Low Demand  
 ---
 
 ## 🌐 Live Demo
@@ -85,6 +49,43 @@ It integrates:
 </table>
 
 ---
+
+
+## 🎯 Project Objectives
+
+- Analyze sales, customer behavior, and product performance  
+- Predict customer churn  
+- Forecast future sales demand  
+- Optimize inventory decisions  
+- Build an end-to-end real-world data product  
+
+---
+
+## 🧠 Key Features
+
+### 📊 Data Analytics
+- Sales trend analysis  
+- Customer segmentation (RFM)  
+- Delivery performance insights  
+- Product performance analysis  
+
+---
+
+### 🤖 Machine Learning Models
+
+#### 1️⃣ Churn Prediction
+- Predicts customers likely to churn  
+- Model: Random Forest  
+
+#### 2️⃣ Demand Forecasting
+- Predicts future sales (next 30 days)  
+- Model: ARIMA  
+
+#### 3️⃣ Inventory Optimization
+- Categorizes products:
+  - High Demand  
+  - Medium Demand  
+  - Low Demand  
 
 ## 📦 Project Structure
 
