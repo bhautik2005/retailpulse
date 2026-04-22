@@ -44,6 +44,11 @@ It integrates:
   - High Demand  
   - Medium Demand  
   - Low Demand  
+---
+
+## 🌐 Live Demo
+
+👉 **[Open RetailPulse App](https://retailpulse-iy7nshe4dwgfxrzfsx9jhg.streamlit.app/)**
 
 ---
 ## 📸 Project Screenshots
@@ -184,7 +189,8 @@ streamlit run app/app.py
 - Deploy backend using FastAPI  
 - Add model explainability (SHAP)  
 - Integrate cloud storage  
-- Improve UI/UX  
-
-### 👨‍💻 Author
-## Bhautik Gondaliya
+- Improve UI/UX
+    
+---
+##👨‍💻 Author
+### Bhautik Gondaliya
