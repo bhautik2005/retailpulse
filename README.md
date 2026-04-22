@@ -84,6 +84,7 @@ It integrates:
   </tr>
 </table>
 ---
+
 ## 📦 Project Structure
 
 ```
