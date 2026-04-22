@@ -83,6 +83,7 @@ It integrates:
     </td>
   </tr>
 </table>
+
 ---
 
 ## 📦 Project Structure
