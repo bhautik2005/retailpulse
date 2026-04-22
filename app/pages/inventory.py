@@ -30,6 +30,15 @@ def show_inventory():
         total_orders=('order_id', 'nunique')
     ).reset_index()
     
+    # Add Product Name using category (since Olist products are anonymous)
+    if 'product_category_name_english' in orders.columns:
+        prod_names = orders[['product_id', 'product_category_name_english']].drop_duplicates(subset=['product_id'])
+        prod_names['Product Name'] = prod_names['product_category_name_english'].str.replace('_', ' ').str.title()
+        product_stats = product_stats.merge(prod_names[['product_id', 'Product Name']], on='product_id', how='left')
+        product_stats['Product Name'] = product_stats['Product Name'].fillna('Unknown Product')
+    else:
+        product_stats['Product Name'] = 'Unknown Product'
+
     product_stats['demand_score'] = product_stats['total_orders'] * product_stats['total_revenue']
     
     if len(product_stats) > 0:
@@ -74,13 +83,30 @@ def show_inventory():
         if len(product_stats) > 0:
             top = product_stats.sort_values(by='demand_score', ascending=False).head(10)
             top['short_id'] = top['product_id'].astype(str).apply(lambda x: x[:8] + "...")
-            st.dataframe(top[['short_id','demand_score','category']].set_index('short_id'), use_container_width=True)
+            
+            action_map = {
+                'High Demand': 'Priority restocking',
+                'Medium Demand': 'Maintain normal inventory',
+                'Low Demand': 'Reduce inventory overhead'
+            }
+            top['Action'] = top['category'].map(action_map)
+            
+            st.dataframe(top[['short_id', 'Product Name', 'demand_score', 'category', 'Action']].set_index('short_id'), use_container_width=True)
         else:
             st.info("No data.")
 
     st.divider()
+    
+    st.subheader("📋 Full Inventory Planning Action List")
+    if len(product_stats) > 0:
+        full_list = product_stats.sort_values(by='demand_score', ascending=False).copy()
+        full_list['Action'] = full_list['category'].map(action_map)
+        st.dataframe(full_list[['product_id', 'Product Name', 'total_orders', 'total_revenue', 'demand_score', 'category', 'Action']].set_index('product_id'), use_container_width=True)
+    else:
+        st.info("No data available for the selected period.")
+
     st.info("""
-    **Business Logic:**
+    **Business Logic Applied Above:**
     🔥 **High Demand (Top 10%)** → Priority restocking  
     ⚠️ **Medium Demand (Next 30%)** → Maintain normal inventory  
     ❄️ **Low Demand (Bottom 60%)** → Reduce inventory overhead
