@@ -1,7 +1,7 @@
 🚀 RetailPulse: AI-Powered E-Commerce Analytics Platform
 
 RetailPulse is a full-stack data analytics + machine learning platform that transforms raw e-commerce data into actionable business insights.
-
+```
 It integrates:
 
 📊 Data Pipeline (ETL)
@@ -34,8 +34,9 @@ High Demand
 Medium Demand
 Low Demand
 Output: inventory_analysis.csv
+
 📦 Project Structure
-```
+
 RetailPulse/
 │
 ├── data/
@@ -68,7 +69,7 @@ RetailPulse/
 │
 ├── requirements.txt
 └── README.md
-```
+
 🔄 Workflow Pipeline
 Raw Data → Data Cleaning → Feature Engineering
         → ML Models → Predictions
@@ -89,17 +90,21 @@ python -m src.ml.run_all_models
 streamlit run app/app.py
 
 📊 Dashboard Pages
-📊 Sales Dashboard (KPIs + trends + forecast)
-👥 Customer Dashboard (churn + segmentation)
-🤖 Churn Prediction (user input → prediction)
-📈 Forecast Dashboard (future sales)
-📦 Inventory Dashboard (stock insights)
+  - 📊 Sales Dashboard (KPIs + trends + forecast)
+  - 👥 Customer Dashboard (churn + segmentation)
+  - 🤖 Churn Prediction (user input → prediction)
+  - 📈 Forecast Dashboard (future sales)
+  - 📦 Inventory Dashboard (stock insights)
+
 🧠 Business Insights Generated
+
 Late deliveries negatively impact customer reviews
 A small segment of customers drives most revenue
 Certain product categories dominate sales
 High churn customers can be targeted for retention
 Inventory can be optimized using demand segmentation
+
+
 🛠️ Tech Stack
 Python
 Pandas, NumPy
@@ -107,17 +112,6 @@ Scikit-learn
 Statsmodels
 Streamlit
 Matplotlib, Seaborn
-🚀 Deployment
-
-Recommended platform:
-
-👉 Streamlit Cloud
-
-Steps:
-
-Push project to GitHub
-Connect repo to Streamlit Cloud
-Deploy using app/app.py
  
 🎯 Future Improvements
 Add real-time data pipeline
